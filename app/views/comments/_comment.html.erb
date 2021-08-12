@@ -1,5 +1,6 @@
+<div class="list-group-item">
 <p>
-  <strong>Commenter:</strong>
+  <strong>Author:</strong>
   <%= comment.commenter %>
 </p>
 
@@ -11,5 +12,6 @@
 <p>
   <%= link_to 'Destroy Comment', [comment.article, comment],
               method: :delete,
-              data: { confirm: "Are you sure?" } %>
+              data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
 </p>
+</div>
